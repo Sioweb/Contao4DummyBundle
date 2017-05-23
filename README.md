@@ -1,5 +1,7 @@
 # Contao 4.3 DummyBundle
 
+Ziel dieses Snippets soll es sein, ein privates Bundle einzubinden in den Contao workflow. In der Contao 4.3 Version gibt es keinen AppKernel oder ähnliches, deshalb wird hier ein externes Bundle definiert und via Composer in das `vendor`-Verzeichnis geladen. Danach funktioniert es wie ein regulär heruntergeladenes Bundle.
+
 ## Generell
 
 Das `bundles`-Verzeichnis muss im Root von Contao stehen. Ggf. kann der Pfad in der `ROOT/composer.json` sonst auch angepasst werden.
