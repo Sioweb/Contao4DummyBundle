@@ -1,6 +1,6 @@
 <?php
 
-namespace Sioweb\SearchBundle\DependencyInjection;
+namespace Sioweb\DummyBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
