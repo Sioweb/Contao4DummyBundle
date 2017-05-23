@@ -28,3 +28,8 @@ Das Bundle muss in den `require`-Block geschrieben werden, danach muss der Pfad 
 	}
 
 Jedes weitere Bundle muss ebenfalls hinzugefügt werden.
+
+## Credits
+
+Danke an [Spookie](https://community.contao.org/de/member.php?9203-Spooky) für die [Hilfe im Forum](https://community.contao.org/de/showthread.php?66835-Gel%C3%B6st-Private-Bundles).  
+Danke an [xtra](https://community.contao.org/de/member.php?503-xtra) für die [Hilfe im Forum](https://community.contao.org/de/showthread.php?64415-Unable-to-create-a-quot-contao-bundle-quot-under-contao-4-2-4&p=422990&viewfull=1#post422990).
