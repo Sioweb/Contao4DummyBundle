@@ -43,6 +43,6 @@
         "branch-alias": {
             "dev-develop": "4.4.x-dev"
         },
-        "contao-manager-plugin": "Sioweb\\SearchBundle\\ContaoManager\\Plugin"
+        "contao-manager-plugin": "Sioweb\\DummyBundle\\ContaoManager\\Plugin"
     }
 }
