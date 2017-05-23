@@ -1,0 +1,8 @@
+<?php $this->extend('block_unsearchable');?>
+<?php $this->block('content'); ?>
+
+<h1>Dummy Content</h1>
+
+<?php echo $this->dummy;?>
+
+<?php $this->endblock(); ?>

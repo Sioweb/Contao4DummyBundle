@@ -1,0 +1,48 @@
+{
+    "name": "sioweb/dummy-bundle",
+    "type": "contao-bundle",
+    "description": "Sioweb test / dummy bundle for contao +4.3",
+    "license": "LGPL-3.0+",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Sascha Weidner",
+            "homepage": "https://sioweb.de"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "symfony/framework-bundle": "^2.8|^3.0",
+        "contao/core-bundle": "^4.3.1"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.0"
+    },
+    "conflict": {
+        "contao/core": "*",
+        "contao/manager-plugin": "<2.0 || >=3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sioweb\\DummyBundle\\": "src/"
+        },
+        "classmap": [
+            "src/Resources/contao/"
+        ],
+        "exclude-from-classmap": [
+            "src/Resources/contao/config/",
+            "src/Resources/contao/dca/",
+            "src/Resources/contao/languages/",
+            "src/Resources/contao/templates/"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "4.4.x-dev"
+        },
+        "contao-manager-plugin": "Sioweb\\SearchBundle\\ContaoManager\\Plugin"
+    }
+}

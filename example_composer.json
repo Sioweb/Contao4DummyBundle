@@ -1,0 +1,44 @@
+{
+    "name": "contao/managed-edition",
+    "type": "project",
+    "description": "Contao Open Source CMS",
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Leo Feyer",
+            "homepage": "https://github.com/leofeyer"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "contao/manager-bundle": "4.3.*",
+        "contao/calendar-bundle": "^4.3",
+        "contao/comments-bundle": "^4.3",
+        "contao/faq-bundle": "^4.3",
+        "contao/listing-bundle": "^4.3",
+        "contao/news-bundle": "^4.3",
+        "contao/newsletter-bundle": "^4.3",
+        "sioweb/dummy-bundle": "^1.0"
+    },
+    "require-dev": {
+        "sensio/generator-bundle": "^3.0",
+        "symfony/phpunit-bridge": "^3.0"
+    },
+    "config": {
+        "component-dir": "assets"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Contao\\ManagerBundle\\Composer\\ScriptHandler::initializeApplication"
+        ],
+        "post-update-cmd": [
+            "Contao\\ManagerBundle\\Composer\\ScriptHandler::initializeApplication"
+        ]
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "bundles/DummyBundle"
+        }
+    ]
+}
