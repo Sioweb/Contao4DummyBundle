@@ -146,6 +146,8 @@ An dieser Stelle muss `enum` noch als Mapping in die Datei `ROOT/app/config/conf
 
 ## Bower / Yarn und requirejs
 
+**Warum jetzt Node?**: Weil's geht. Alle Componenten lassen sich auch mit Composer herunterladen. In einem öffentlichen Bundle ist es sogar klüger, da die Abhängigkeiten direkt installiert werden können, ohne das Redundanzen entstehen. Warum also Yarn? Ich wollte testen ob es geht und wie ich einen schönen Workflow aufbauen kann. Fakt ist, Yarn ist noch nicht soweit und in Composer lassen sich auf jedenfall Zielordner besser angeben als mit Yarn/Bower. Wer aber wie ich einen bestehenden Workflow mit Yarn nutzt kann es ja nutzen. 
+
 Mit Yarn lassen sich wie mit Composer weitere Pakete aus dem Web herunterladen. Yarn deckt dabei vor allem den Javascript und NodeJS bereich ab. [Yarn lässt sich leicht installieren](https://yarnpkg.com/en/docs/install). Bei mir ist es global installiert, dazu habe ich `npm install -g yarn` verwendet (npm ist ebenfalls global installiert).
 
 Ich wechsle in das `ROOT/files/assets` Verzeichnis, in dem ich alle meine Scripte, Bilder und Styles speichere. Um als Beispiel ChartJS, NoUISlider und RequireJS zu installieren benötigt es folgende package.json in diesem Verzeichnis.
