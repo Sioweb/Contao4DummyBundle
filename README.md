@@ -4,6 +4,10 @@ Ziel dieses Snippets soll es sein, ein privates Bundle einzubinden in den Contao
 
 Dieses Repository dient als ein Tagebuch in dem ich nach und nach Lösungen für die Probleme notiere, welche mir während des Programmierens aufgetreten sind. Zu Beginn des Projektes, habe ich kaum Erfahrungen mit Composer, Yarn, RequireJS und nur einfache Kenntnisse über Symfony. Allerdings gleiche ich das mit jahrelanger Erfahrung wieder aus.
 
+## Packagist
+
+Falls das Bundle bzw Modul nicht privat sein soll, muss es lediglich auf [Packagist](https://packagist.org/) veröffentlicht werden. Dazu wird ein Konto bei Packagist benötigt und ggf. ein Github-Konto oder wo auch immer das Modul als .git zu finden ist. Packagist stellt das Modul dann bereit.
+
 ## Generell
 
 Das `bundles`-Verzeichnis muss im Root von Contao stehen. Ggf. kann der Pfad in der `ROOT/composer.json` sonst auch angepasst werden.
