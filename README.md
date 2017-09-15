@@ -8,6 +8,8 @@ Dieses Repository dient als ein Tagebuch in dem ich nach und nach Lösungen für
 
 Falls das Bundle bzw Modul nicht privat sein soll, muss es lediglich auf [Packagist](https://packagist.org/) veröffentlicht werden. Dazu wird ein Konto bei Packagist benötigt und ggf. ein Github-Konto oder wo auch immer das Modul als .git zu finden ist. Packagist stellt das Modul dann bereit.
 
+Wichtig ist, in Github kann unter den Settings ein Service (Integrations & service) definiert werden. Hier muss packagist als Service ausgewählt werden und dann pusht Github jedes neue Release (Tags) direkt auf Packagist. Alle Nutzer des großen weiten Internets haben dann Zugriff auf das Modul.
+
 ## Generell
 
 Das `bundles`-Verzeichnis muss im Root von Contao stehen. Ggf. kann der Pfad in der `ROOT/composer.json` sonst auch angepasst werden.
