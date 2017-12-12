@@ -22,5 +22,5 @@ if(TL_MODE == 'FE') {
 }
 
 array_insert($GLOBALS['TL_CTE']['texts'],2,array (
-	'content_dummy' => 'Sioweb\ContentDummy',
+	'content_dummy' => 'Sioweb\ContentElement\ContentDummy',
 ));

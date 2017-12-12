@@ -1,9 +1,9 @@
 <?php
 
-namespace Sioweb;
-use Contao;
+namespace Sioweb\ContentElement;
+use Contao\ContentElement;
 
-class ContentDummy extends \ContentElement {
+class ContentDummy extends ContentElement {
 
   protected $strTemplate = 'dummy_default';
   
