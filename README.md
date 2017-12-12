@@ -81,6 +81,16 @@ Nach der Installation bzw. wenn das Verzeichnis nachträglich hinzugefügt wurde
 	
 Danach sollten die Assets unter `ROOT/web/bundles/DEIN_BUNDLE` zu finden sein.
 
+## Entwicklung on the fly
+
+Um ein Modul zu entwickeln, empfehle ich den Entwicklermodus, der wie üblich in Symfony über domain.tld/app_dev.php aufgerufen werden kann.
+
+Bei erstmaliger Benutzung muss zuerst ein Zugang für den Modus per Konsole erzeugt werden:
+
+	php vendor/bin/contao-console contao:install-web-dir --user=USERNAME --password=PASSWORT
+
+Durch diesen Befehl wird app_dev.php durch ein Passwort gesichert.
+
 ## Doctrine
 
 ### Nützliche Erweiterungen für Doctrine
