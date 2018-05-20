@@ -214,9 +214,6 @@ Wir wollen an dieser stelle ChartJS und noUiSlider verwenden.
 Im Bundle unter `src/public/js` wird die Datei `main.js` erstellt mit dem Inhalt:
 
 	window.tl_requirejs.push(function(require) {
-
-		var source = '/vendor/kempfsolutions/chart-bundle/src/Resources/contao/assets/js/';
-	
 		require.config({
 			baseUrl: '/',
 			paths: {
