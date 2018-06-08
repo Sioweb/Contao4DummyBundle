@@ -1,0 +1,24 @@
+sioweb_dummybundle_all_files:
+    path: /dummybundle/api/all
+    defaults:
+        _scope: frontend
+        _token_check: true
+        _controller: "SiowebDummyBundle:Api:ichWillAlleDateinamen"
+        
+sioweb_dummybundle_file:
+    path: /dummybundle/api/file/{filename}
+    defaults:
+        _scope: frontend
+        _token_check: true
+        _controller: "SiowebDummyBundle:Api:ichWillEineDatei"
+    requirements:
+        filename: .+
+
+sioweb_dummybundle_catch_all:
+    path: /dummybundle/api/{_url_fragment}
+    defaults:
+        _scope: frontend
+        _token_check: true
+        _controller: "SiowebDummyBundle:Api:index"
+    requirements:
+        _url_fragment: .*
