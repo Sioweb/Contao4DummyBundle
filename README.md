@@ -77,9 +77,11 @@ Um die Assets aus dem Bundle in das öffentliche Verzeichnis zu laden, braucht d
 Nach der Installation bzw. wenn das Verzeichnis nachträglich hinzugefügt wurde, müssen die Assets noch installiert werden. Ich nutze dafür die Konsole:
 
 	cd "to/my/dir"
-	vendor/bin/contao-console assets:install
+	vendor/bin/contao-console assets:install --symlink
 	
 Danach sollten die Assets unter `ROOT/web/bundles/DEIN_BUNDLE` zu finden sein.
+
+**Hinweis:** Ohne die Option `--symlink` werden die Assets (Bilder, CSS, Javascript) nur in das Assets-Verzeichnis kopiert. Bei jeder Anpassung, muss der Befehl dann neu ausgeführt werden. Bei einem Symlink, sind die Anpassungen in den Assets direkt nach speichern verfügbar.
 
 ## Entwicklung on the fly
 
