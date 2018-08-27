@@ -235,3 +235,13 @@ Der Code registriert eine Funktion die dann in der Datei `Root/files/assets/js/m
 ## Google Begriffe
 
 Symfony service, Bundles, Composer PSR-4, Composer repositories, Composer, Git-Bash als Administrator
+
+## Nice2Know / F.A.Q
+
+### Wie sehe ich, welche Parameter wie %kernel.root_dir% im Core abrufbar sind?
+
+	$ vendor/bin/contao-console debug:container --parameters
+	
+### Welche Routen sind derzeit erreichbar?
+
+	$ vendor/bin/contao-console debug:router
