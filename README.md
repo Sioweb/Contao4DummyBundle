@@ -95,6 +95,29 @@ Bei erstmaliger Benutzung muss zuerst ein Zugang für den Modus per Konsole erze
 
 Durch diesen Befehl wird app_dev.php durch ein Passwort gesichert.
 
+## Satis & Gitlab / Github ODER [packagist.com](https://packagist.com)
+
+Falls du vor hast, viele Module privat zu verwalten und keine Lust hast, die immer lokal per FTP zu installieren, empfehle ich dir, deine Pakete gesammelt in ein privates Verzeichnis im Netz zu installieren. Dazu hast du drei Möglichkeiten: GIT, Packagist.com oder [Satis](https://getcomposer.org/doc/articles/handling-private-packages-with-satis.md).
+
+### Git
+
+Composer kann auf Git-Repositories zugreifen, dazu musst in der `Root/composer.json` im `repositories`-Block etwa folgendes Notiert werden:
+
+	"repositories": [
+	    {
+		"url": "https://domain-zu-einem-git-repository.git",
+		"type": "git"
+	    }
+	]
+
+### Packagist.com
+
+Packagist.com ist im Gegensatz zu [Packagist.org](https://packagist.org) kostenpflichtig. Allerdings ist die Platform sehr bequem und einfach zu bedienen und bietet private Pakete an ohne viel einarbeitungszeit wie etwa bei Satis.
+
+### Satis 
+
+Satis benötigt eine Domain etwa packages.deine-domain.de, welche nach der installation von Satis in das /web/ verzeichnis von Satis zeigt.
+
 ## Doctrine
 
 ### Nützliche Erweiterungen für Doctrine
