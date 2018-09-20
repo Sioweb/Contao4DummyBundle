@@ -36,6 +36,8 @@ Das Bundle muss in den `require`-Block geschrieben werden, danach muss der Pfad 
 		]
 		...
 	}
+	
+Der Name im `require`-Block muss mit dem Titel in der [composer.json des Modules](https://github.com/Sioweb/Contao4DummyBundle/blob/master/bundles/DummyBundle/composer.json#L2) passen.
 
 Jedes weitere Bundle muss ebenfalls hinzugefügt werden. Die Punkte (...) dürfen **nicht** übernommen werden.
 
