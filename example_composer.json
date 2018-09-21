@@ -38,7 +38,7 @@
     "repositories": [
         {
             "type": "path",
-            "url": "bundles/DummyBundle"
+            "url": "bundles/Sioweb/DummyBundle"
         }
     ]
 }

@@ -1,5 +1,0 @@
-services:
-    sioweb.dummybundle.search:
-        class: Sioweb\DummyBundle\Service\Search
-        arguments:
-            - "@contao.framework"

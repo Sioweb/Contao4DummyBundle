@@ -3,7 +3,6 @@
     "type": "contao-bundle",
     "description": "Sioweb test / dummy bundle for contao +4.3",
     "license": "LGPL-3.0+",
-    "version": "1.0.0",
     "authors": [
         {
             "name": "Sascha Weidner",
@@ -12,11 +11,7 @@
     ],
     "require": {
         "php": ">=5.5.0",
-        "symfony/framework-bundle": "^2.8|^3.0",
-        "contao/core-bundle": "^4.3.1"
-    },
-    "require-dev": {
-        "contao/manager-plugin": "^2.0"
+        "contao/core-bundle": "^4"
     },
     "conflict": {
         "contao/core": "*",
@@ -27,13 +22,7 @@
             "Sioweb\\DummyBundle\\": "src/"
         }
     },
-    "config": {
-        "preferred-install": "dist"
-    },
     "extra": {
-        "branch-alias": {
-            "dev-develop": "4.4.x-dev"
-        },
         "contao-manager-plugin": "Sioweb\\DummyBundle\\ContaoManager\\Plugin"
     }
 }

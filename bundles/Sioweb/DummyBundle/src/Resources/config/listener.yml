@@ -1,0 +1,12 @@
+services:
+    sioweb.dummybundle.search:
+        class: Sioweb\DummyBundle\Service\Search
+        arguments:
+            - "@contao.framework"
+    seipp.vipp.initialize:
+        class: Sioweb\DummyBundle\EventListener\System
+        tags:
+            - { name: contao.hook, hook: initializeSystem, method: initializeSystem, priority: -256 }
+        arguments:
+            - "@contao.routing.scope_matcher"
+            - "@request_stack"
