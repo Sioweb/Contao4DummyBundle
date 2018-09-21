@@ -9,5 +9,11 @@ use Sioweb\DummyBundle\DependencyInjection\Extension;
  */
 class SiowebDummyBundle extends Bundle
 {
-    return new Extension();
+    /**
+     * {@inheritdoc}
+     */
+    public function getContainerExtension()
+    {
+        return new Extension();
+    }
 }
