@@ -116,7 +116,21 @@ Packagist.com ist im Gegensatz zu [Packagist.org](https://packagist.org) kostenp
 
 ### Satis 
 
-Satis benötigt eine Domain etwa packages.deine-domain.de, welche nach der installation von Satis in das /web/ verzeichnis von Satis zeigt.
+Satis benötigt eine Domain etwa packages.deine-domain.de, welche nach der installation von Satis in das /web/ verzeichnis von Satis zeigt. Am einfachsten ist es, Gitlab via [SSH verbinden zu lassen](https://medium.com/uncaught-exception/setting-up-multiple-gitlab-accounts-82b70e88c437).
+
+#### Mein Workflow
+
+1. Modul auf via Git auf Gitlab pushen.
+- In Gitlab einen Tag mit Version und changes anlegen.
+- Gitlab Interactions empfangen das Tag-Event und rufen eine PHP-Datei in Satis auf (.php?package=sioweb/packagename)
+	- Gitlab sendet dazu einen Security-Token den die PHP-Datei validiert
+- Satis lädt das neue Paket
+
+Danach kann das Modul überall mit `composer req sioweb/packagename` installiert werden, wenn das Satis-Repository im `repositories`-Block hinterlegt ist.
+
+#### Sicherheit
+
+Das Satis-Verzeichnis sollte per `.htaccess` geschützt werden, mit einer sogenannten `auth.json` können die Zugangsdaten an Composer übermittelt werden.
 
 ## Doctrine
 
