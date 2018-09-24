@@ -133,6 +133,10 @@ Das Satis-Verzeichnis sollte per `.htaccess` geschützt werden, mit einer sogena
 
 ## Doctrine
 
+### Vorab
+
+Du kannst diese Einstellungen auch direkt in deinem Modul einrichten, du musst dazu nicht die composer.json oder die config.yml von Contao anfassen. In diesem DummyBundle ist ein Beispiel zu finden, wie du Doctrine, Entities und Repositories verwendest.
+
 ### Nützliche Erweiterungen für Doctrine
 
 Diese Symfony-Bundles nutze ich gerne in meinen Apps, da sie mehr Datentypen als nur die Standards beherrschen wie `Enum`.
