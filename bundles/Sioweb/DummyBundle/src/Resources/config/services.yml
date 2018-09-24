@@ -1,0 +1,9 @@
+services:
+    sioweb.dummy.dca.tl_dummy:
+        class: Sioweb\DummyBundle\Dca\Dummy
+        public: true
+        arguments:
+            - "@contao.framework"
+            - "@security.token_storage"
+            - "@session"
+            - "@doctrine.orm.default_entity_manager"

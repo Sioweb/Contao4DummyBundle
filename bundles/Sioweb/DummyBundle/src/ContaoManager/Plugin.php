@@ -9,6 +9,12 @@ use Contao\ManagerPlugin\Routing\RoutingPluginInterface;
 use Symfony\Component\Config\Loader\LoaderResolverInterface;
 use Symfony\Component\HttpKernel\KernelInterface;
 
+// Für die Konfiguration
+use Contao\ManagerPlugin\Config\ContainerBuilder as PluginContainerBuilder;
+
+// Für getBundles()
+use Sioweb\Glossar\SiowebDummyBundle;
+use Contao\CoreBundle\ContaoCoreBundle;
 
 /**
  * Plugin for the Contao Manager.
@@ -23,9 +29,8 @@ class Plugin implements BundlePluginInterface, RoutingPluginInterface
     public function getBundles(ParserInterface $parser)
     {
         return [
-            BundleConfig::create('Sioweb\DummyBundle\SiowebDummyBundle')
-                ->setLoadAfter(['Contao\CoreBundle\ContaoCoreBundle'])
-                ->setReplace(['dummybundle']),
+            BundleConfig::create(SiowebDummyBundle::class)
+                ->setLoadAfter([ContaoCoreBundle::class]),
         ];
 
     }
@@ -39,6 +44,38 @@ class Plugin implements BundlePluginInterface, RoutingPluginInterface
             ->resolve(__DIR__.'/../Resources/config/routing.yml')
             ->load(__DIR__.'/../Resources/config/routing.yml')
         ;
+    }
+
+    /**
+     * Allows a plugin to override extension configuration.
+     *
+     * @param string           $extensionName
+     * @param array            $extensionConfigs
+     * @param PluginContainerBuilder $container
+     *
+     * @return array
+     */
+    public function getExtensionConfig($extensionName, array $extensionConfigs, PluginContainerBuilder $container)
+    {
+        /**
+         * Füge dein Bundle zu Doctrine hinzu
+         */
+        if ('doctrine' === $extensionName) {
+            
+            $extensionConfigs[0] = array_merge($extensionConfigs[0], [
+                'orm' => [
+                    'entity_managers' => [
+                        'default' => [
+                            'mappings' => [
+                                'SiowebDummyBundle' => ''
+                            ]
+                        ]
+                    ]
+                ]
+            ]);
+        }
+
+        return $extensionConfigs;
     }
 
 }

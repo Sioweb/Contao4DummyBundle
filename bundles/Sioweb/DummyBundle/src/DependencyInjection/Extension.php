@@ -20,5 +20,6 @@ class Extension extends BaseExtension
         );
 
         $loader->load('listener.yml');
+        $loader->load('services.yml');
     }
 }

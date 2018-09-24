@@ -7,7 +7,6 @@
 /**
  * @file autoload.php
  * @author Sascha Weidner
- * @version 3.0.0
  * @package sioweb.dummybundle
  * @copyright Sioweb, Sascha Weidner
  */
