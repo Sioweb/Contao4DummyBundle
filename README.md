@@ -4,6 +4,15 @@
 
 Um eine eigene Route zu erzeugen, benötigt es einen Controller, eine weitere YML-Datei und einen Eintrag in der Plugin.php Datei.
 
+## Support/Fragen/Hilfe
+
+Es gibt zwei Kategorien an Fragen:
+
+- [Das Modul hier funktioniert nicht oder dir ist nicht klar was das soll](https://github.com/Sioweb/Contao4DummyBundle/issues)
+- [Du hast Fragen zur Entwicklung mit Contao](https://community.contao.org/de/)
+
+Sollte dir etwas in diesem Bundle fehlen, werde ich schauen ob ich es hinzufügen kann, oder du erstellst ein Pull-Request und erleichterst mir die Arbeit ab. 
+
 ## Plugin.php
 
 Neu ist das `RoutingPluginInterface` und die Funktion `getRouteCollection`. Bitte auch die neuen Use-Angaben im Header beachten. Die Funktion lädt nun die Datei `routing.yml`, welche unter `Resources\Config\routing.yml` angelegt wird.
@@ -287,3 +296,9 @@ Symfony service, Bundles, Composer PSR-4, Composer repositories, Composer, Git-B
 ### Welche Routen sind derzeit erreichbar?
 
 	$ vendor/bin/contao-console debug:router
+
+## Dir gefällt das Bundle?
+
+Gerne freue ich mich auf ein kleines Danke auf meiner [Amazon Wunschliste](https://www.amazon.de/hz/wishlist/ls/3IW6TE09RDGV2/ref=nav_wishlist_lists_1?_encoding=UTF8&type=wishlist).
+
+Du kannst Amazon nicht leiden? Kein Problem, ich freue mich auch über [Likes](https://www.facebook.com/sioweb), positive Bewertungen und Verlinkungen auf meine Webseite.
