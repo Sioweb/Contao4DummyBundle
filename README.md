@@ -301,4 +301,4 @@ Symfony service, Bundles, Composer PSR-4, Composer repositories, Composer, Git-B
 
 Gerne freue ich mich auf ein kleines Danke auf meiner [Amazon Wunschliste](https://www.amazon.de/hz/wishlist/ls/3IW6TE09RDGV2/ref=nav_wishlist_lists_1?_encoding=UTF8&type=wishlist).
 
-Du kannst Amazon nicht leiden? Kein Problem, ich freue mich auch über [Likes](https://www.facebook.com/sioweb), positive Bewertungen und Verlinkungen auf meine Webseite.
+Du kannst Amazon nicht leiden? Kein Problem, ich freue mich auch über [Likes](https://www.facebook.com/sioweb) und [positive Bewertungen](https://www.google.de/search?q=Sioweb).
