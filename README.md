@@ -1,4 +1,4 @@
-Contao 4.4+ DummyBundle
+# Contao 4.4+ DummyBundle
 
 Ziel dieses Snippets soll es sein, ein privates Bundle einzubinden in den Contao workflow. In der Contao 4.3 Version gibt es keinen AppKernel oder ähnliches, deshalb wird hier ein externes Bundle definiert und via Composer in das vendor-Verzeichnis geladen. Danach funktioniert es wie ein regulär heruntergeladenes Bundle.
 
