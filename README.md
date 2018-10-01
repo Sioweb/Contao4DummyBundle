@@ -1,8 +1,8 @@
-# Eigene Routen in Contao 4
+Contao 4.4+ DummyBundle
 
-**Achtung:** Dies ist ein erweitertes Tutorial für das [DummyBundle: https://github.com/Sioweb/Contao4DummyBundle](https://github.com/Sioweb/Contao4DummyBundle). In diesem Tutorial werden **Routen** erklärt.
+Ziel dieses Snippets soll es sein, ein privates Bundle einzubinden in den Contao workflow. In der Contao 4.3 Version gibt es keinen AppKernel oder ähnliches, deshalb wird hier ein externes Bundle definiert und via Composer in das vendor-Verzeichnis geladen. Danach funktioniert es wie ein regulär heruntergeladenes Bundle.
 
-Um eine eigene Route zu erzeugen, benötigt es einen Controller, eine weitere YML-Datei und einen Eintrag in der Plugin.php Datei.
+Dieses Repository dient als ein Tagebuch in dem ich nach und nach Lösungen für die Probleme notiere, welche mir während des Programmierens aufgetreten sind. Zu Beginn des Projektes, habe ich kaum Erfahrungen mit Composer, Yarn, RequireJS und nur einfache Kenntnisse über Symfony. Allerdings gleiche ich das mit jahrelanger Erfahrung wieder aus.
 
 ## Support/Fragen/Hilfe
 
