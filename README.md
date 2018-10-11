@@ -13,18 +13,6 @@ Es gibt zwei Kategorien an Fragen:
 
 Sollte dir etwas in diesem Bundle fehlen, werde ich schauen ob ich es hinzufügen kann, oder du erstellst ein Pull-Request und erleichterst mir die Arbeit ab. 
 
-## Plugin.php
-
-Neu ist das `RoutingPluginInterface` und die Funktion `getRouteCollection`. Bitte auch die neuen Use-Angaben im Header beachten. Die Funktion lädt nun die Datei `routing.yml`, welche unter `Resources\Config\routing.yml` angelegt wird.
-
-## Routing.yml
-
-Jede Route benötigt einen YML-Block mit einer uniquen Bezeichnung. Idealerweise beschreibt die Bezeichnung, was die Route genau macht.
-
-### Path-Option
-
-Diese Option gibt den Pfad in der URL an. In diesem Beispiel lädt der Controller nur, wenn die URL mit `eure-domain.de/dummybundle/api/` beginnt. Die Reihenfolge der Routen ist wichtig, sobald Contao/Symfony die erste Route mit der URL `matchen` kann, wird diese Ausgeführt, egal ob  es noch eine Bessere gibt.
-
 ## Defaults
 
 	{
@@ -92,6 +80,20 @@ Nach der Installation bzw. wenn das Verzeichnis nachträglich hinzugefügt wurde
 Danach sollten die Assets unter `ROOT/web/bundles/DEIN_BUNDLE` zu finden sein.
 
 **Hinweis:** Ohne die Option `--symlink` werden die Assets (Bilder, CSS, Javascript) nur in das Assets-Verzeichnis kopiert. Bei jeder Anpassung, muss der Befehl dann neu ausgeführt werden. Bei einem Symlink, sind die Anpassungen in den Assets direkt nach speichern verfügbar.
+
+## Eigene Routen
+
+### Plugin.php
+
+Neu ist das `RoutingPluginInterface` und die Funktion `getRouteCollection`. Bitte auch die neuen Use-Angaben im Header beachten. Die Funktion lädt nun die Datei `routing.yml`, welche unter `Resources\Config\routing.yml` angelegt wird.
+
+### Routing.yml
+
+Jede Route benötigt einen YML-Block mit einer uniquen Bezeichnung. Idealerweise beschreibt die Bezeichnung, was die Route genau macht.
+
+#### Path-Option
+
+Diese Option gibt den Pfad in der URL an. In diesem Beispiel lädt der Controller nur, wenn die URL mit `eure-domain.de/dummybundle/api/` beginnt. Die Reihenfolge der Routen ist wichtig, sobald Contao/Symfony die erste Route mit der URL `matchen` kann, wird diese Ausgeführt, egal ob  es noch eine Bessere gibt.
 
 ## Entwicklung on the fly
 
