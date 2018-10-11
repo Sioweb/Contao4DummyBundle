@@ -32,18 +32,22 @@ Composer installiert das Plugin nun. Nach der Installation kann beliebig an den 
 
 Sollten die Änderungen nicht greifen, kann zusätzlich das Verzeichnis `/var/cache` von Hand oder mit der Console gelöscht werden.
 
+### Modul registrieren / hinzufügen
+
 Damit Composer das Modul finden kann, muss es noch in der composer.json registriert werden. Hier ein Beispiel: https://github.com/Sioweb/Contao4DummyBundle/blob/master/example_composer.json
 
 ## Bundle-Assets unter ROOT/web/bundles
 
 Um die Assets aus dem Bundle in das öffentliche Verzeichnis zu laden, braucht das Bundle ein `public`-Verzeichnis:
 
-- Bundle
-	- src
-		- ContaoManager
-		- Ressources
-			- contao
-			- **public**
+- privateSrc
+	- Sioweb
+		DummyModul
+			- src
+				- ContaoManager
+				- Ressources
+					- contao
+					- **public**
 
 Nach der Installation bzw. wenn das Verzeichnis nachträglich hinzugefügt wurde, müssen die Assets noch installiert werden. Ich nutze dafür die Konsole:
 
