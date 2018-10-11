@@ -13,35 +13,6 @@ Es gibt zwei Kategorien an Fragen:
 
 Sollte dir etwas in diesem Bundle fehlen, werde ich schauen ob ich es hinzufügen kann, oder du erstellst ein Pull-Request und erleichterst mir die Arbeit ab. 
 
-## Defaults
-
-	{
-		...
-		"require": {
-		    	"php": ">=5.5.0",
-		    	"contao/manager-bundle": "4.3.*",
-		    	"contao/calendar-bundle": "^4.3",
-			...
-			"sioweb/dummy-bundle": "^1.0"
-		},
-		...
-		"repositories": [
-			{
-				"type": "path",
-				"url": "bundles/DummyBundle"
-			}
-		]
-		...
-	}
-	
-Der Name im `require`-Block muss mit dem Titel in der [composer.json des Modules](https://github.com/Sioweb/Contao4DummyBundle/blob/master/bundles/DummyBundle/composer.json#L2) passen.
-
-**ControllerName:** Der Name des Controllers, aber ohne das Wort Controller. Also bei `ApiController.php` darf lediglich `Api` verwendet werden.
-
-**Funktionsname:** Genau wie bei Controllern, nur dass die Funktion ohne das Wort `Action` angegeben wird.
-
-## Requirements
-
 ## Installieren
 
 ### Composer (Windows)
@@ -94,6 +65,14 @@ Jede Route benötigt einen YML-Block mit einer uniquen Bezeichnung. Idealerweise
 #### Path-Option
 
 Diese Option gibt den Pfad in der URL an. In diesem Beispiel lädt der Controller nur, wenn die URL mit `eure-domain.de/dummybundle/api/` beginnt. Die Reihenfolge der Routen ist wichtig, sobald Contao/Symfony die erste Route mit der URL `matchen` kann, wird diese Ausgeführt, egal ob  es noch eine Bessere gibt.
+
+#### ControllerName
+
+Der Name des Controllers, aber ohne das Wort Controller. Also bei `ApiController.php` darf lediglich `Api` verwendet werden.
+
+#### Funktionsname
+
+Genau wie bei Controllern, nur dass die Funktion ohne das Wort `Action` angegeben wird.
 
 ## Entwicklung on the fly
 
