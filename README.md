@@ -45,9 +45,9 @@ Damit Composer das Modul finden kann, muss es noch in der composer.json registri
 
 Um die Assets aus dem Bundle in das öffentliche Verzeichnis zu laden, braucht das Bundle ein `public`-Verzeichnis:
 
-- privateSrc
+- bundles
 	- Sioweb
-		DummyModul
+		- DummyBundle
 			- src
 				- ContaoManager
 				- Ressources
