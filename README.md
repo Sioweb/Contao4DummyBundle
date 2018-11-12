@@ -16,9 +16,9 @@ Sollte dir etwas in diesem Bundle fehlen, werde ich schauen ob ich es hinzufüge
 ## Installieren
 
 1. Kopiere den Ordner `/bundles/` in das Contao Root-Verzeichnis
-- Füge den Pfad zum Modul in der [Composer.json](https://github.com/Sioweb/Contao4DummyBundle/blob/master/example_composer.json#L41) hinzu
-- Registriere das Modul in der [Composer.json](https://github.com/Sioweb/Contao4DummyBundle/blob/master/example_composer.json#L21) und führe `composer update` in der Konsole aus
-- *ODER* installiere es über die Konsole mit `composer req sioweb/dummy-bundle`
+2. Füge den Pfad zum Modul in der [Composer.json](https://github.com/Sioweb/Contao4DummyBundle/blob/master/example_composer.json#L41) hinzu
+3. Registriere das Modul in der [Composer.json](https://github.com/Sioweb/Contao4DummyBundle/blob/master/example_composer.json#L21) und führe `composer update` in der Konsole aus
+4. *ODER* installiere es über die Konsole mit `composer req sioweb/dummy-bundle`
 
 ### Composer (Windows)
 
