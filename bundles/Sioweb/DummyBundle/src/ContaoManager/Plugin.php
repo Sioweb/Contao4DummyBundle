@@ -13,7 +13,7 @@ use Symfony\Component\HttpKernel\KernelInterface;
 use Contao\ManagerPlugin\Config\ContainerBuilder as PluginContainerBuilder;
 
 // Für getBundles()
-use Sioweb\Glossar\SiowebDummyBundle;
+use Sioweb\DummyBundle\SiowebDummyBundle;
 use Contao\CoreBundle\ContaoCoreBundle;
 
 /**
