@@ -6,4 +6,4 @@ services:
             - "@contao.framework"
             - "@security.token_storage"
             - "@session"
-            - "@doctrine.orm.default_entity_manager"
+            - "doctrine.orm.entity_manager"
