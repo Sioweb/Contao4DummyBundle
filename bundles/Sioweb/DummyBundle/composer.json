@@ -11,8 +11,13 @@
         }
     ],
     "require": {
-        "php": ">=5.5.0",
-        "contao/core-bundle": "^4"
+        "php": ">=7.1",
+        "contao/core-bundle": "^4",
+        "doctrine/orm": "^2.6",
+        "doctrine/doctrine-bundle": "^1.6",
+        "doctrine/doctrine-cache-bundle": "^1.2",
+        "doctrine/data-fixtures": "1.0.*",
+        "doctrine/dbal": "~2.4"
     },
     "conflict": {
         "contao/core": "*",
