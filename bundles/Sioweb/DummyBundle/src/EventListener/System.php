@@ -5,7 +5,7 @@ namespace Sioweb\DummyBundle\EventListener;
 use Contao\CoreBundle\Routing\ScopeMatcher;
 use Symfony\Component\HttpFoundation\RequestStack;
 
-class system {
+class System {
     
     private $requestStack;
     private $scopeMatcher;
