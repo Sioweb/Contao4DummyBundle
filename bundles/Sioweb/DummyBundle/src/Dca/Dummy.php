@@ -5,7 +5,7 @@
  */
 
 declare (strict_types = 1);
-namespace Sioweb\Dummy\Dca;
+namespace Sioweb\DummyBundle\Dca;
 
 use Contao\DataContainer;
 use Contao\Exception;
