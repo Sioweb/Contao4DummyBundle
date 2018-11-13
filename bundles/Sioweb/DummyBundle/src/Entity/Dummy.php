@@ -1,6 +1,6 @@
 <?php
 
-namespace Sioweb\Dummy\Entity;
+namespace Sioweb\DummyBundle\Entity;
 use \Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -61,6 +61,19 @@ class Terms
      * @ORM\Column(type="string", options={"default" : ""})
      */
     protected $stop;
+
+    // Diese Funktion ist sehr hilfreich, um alle Daten als Array zu erhalten. 
+    public function getData() {
+        $arrData = [];
+        foreach(preg_grep('|^get(?!Data)|', get_class_methods($this)) as $method) {
+            $arrData[($Field = lcfirst(substr($method, 3)))] = $this->{$method}();
+            if(is_object($arrData[$Field])) {
+                $arrData[$Field] = $arrData[$Field]->getData();
+            }
+        }
+        
+        return $arrData;
+    }
 
 
     /**
