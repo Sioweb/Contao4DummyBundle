@@ -1,6 +1,6 @@
 <?php
 
-namespace Sioweb\Dummy\Repository;
+namespace Sioweb\DummyBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
 
