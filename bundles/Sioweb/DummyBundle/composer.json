@@ -1,6 +1,7 @@
 {
     "name": "sioweb/dummy-bundle",
     "type": "contao-bundle",
+    "version": "1.0.0",
     "description": "Sioweb test / dummy bundle for contao +4.3",
     "license": "LGPL-3.0+",
     "authors": [
