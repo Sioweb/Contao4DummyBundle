@@ -1,6 +1,7 @@
 <?php
 
-namespace Sioweb\ContentElement;
+namespace Sioweb\DummyBundle\ContentElement;
+
 use Contao\ContentElement;
 
 class ContentDummy extends ContentElement {
