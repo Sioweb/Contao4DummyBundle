@@ -8,5 +8,5 @@ services:
         tags:
             - { name: contao.hook, hook: initializeSystem, method: initializeSystem, priority: -256 }
         arguments:
-            - "@contao.routing.scope_matcher"
             - "@request_stack"
+            - "@contao.routing.scope_matcher"
