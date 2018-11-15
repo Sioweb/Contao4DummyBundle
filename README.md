@@ -11,7 +11,7 @@ Es gibt zwei Kategorien an Fragen:
 - [Das Modul hier funktioniert nicht oder dir ist nicht klar was das soll](https://github.com/Sioweb/Contao4DummyBundle/issues)
 - [Du hast Fragen zur Entwicklung mit Contao](https://community.contao.org/de/)
 
-Sollte dir etwas in diesem Bundle fehlen, werde ich schauen ob ich es hinzufügen kann, oder du erstellst ein Pull-Request und erleichterst mir die Arbeit ab. 
+Sollte dir etwas in diesem Bundle fehlen, werde ich schauen ob ich es hinzufügen kann, oder du erstellst ein Pull-Request und erleichterst mir die Arbeit ab.
 
 ## Installieren
 
@@ -62,6 +62,10 @@ Nach der Installation bzw. wenn das Verzeichnis nachträglich hinzugefügt wurde
 Danach sollten die Assets unter `ROOT/web/bundles/DEIN_BUNDLE` zu finden sein.
 
 **Hinweis:** Ohne die Option `--symlink` werden die Assets (Bilder, CSS, Javascript) nur in das Assets-Verzeichnis kopiert. Bei jeder Anpassung, muss der Befehl dann neu ausgeführt werden. Bei einem Symlink, sind die Anpassungen in den Assets direkt nach speichern verfügbar.
+
+## Contao Versionen
+
+Zwischen Contao 4.4 und 4.6 bzw. 4.9 gibt es starke Veränderungen in der Art und Weise wie z.B. Hooks und Events verwendet werden können. In 4.6 müssen Hooks, nicht mehr in der config.php registriert werden, sondern können Symfony-Konform in einer listener.yml hinterlegt werden. Für die Abwärtskompatibilität, liefert das DummyBundle eine config.php mit erklärung mit.
 
 ## Eigene Routen
 
@@ -131,6 +135,18 @@ Danach kann das Modul überall mit `composer req sioweb/packagename` installiert
 #### Sicherheit
 
 Das Satis-Verzeichnis sollte per `.htaccess` geschützt werden, mit einer sogenannten `auth.json` können die Zugangsdaten an Composer übermittelt werden.
+
+## Lizenz? Muss Sioweb irgendwo stehen bleiben?
+
+Nö. Lade das Bundle herunter, suche und ersetze rekursiv `Sioweb` mit `deinem Alias` und DummyBundle durch den Namen den du dem Bundle geben willst. Achte einfach noch auf den Pfad und dass alle Dateien dein `Naming` besitzen, damit Composer alle Daten findet.
+
+Gerade hier schleichen sich die meisten Fehler ein
+
+- Copy&PAst
+- Typos in Namen
+- Vergessen in einigen Dateien die Namen / Namespaces anzupassen
+
+Kommentare die ich aus `Tutorialgründen` notiert habe, sollten auf jeden Fall entfernt werden. Einfach um das eigene Image zu wahren.
 
 ## Doctrine
 
