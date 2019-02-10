@@ -33,7 +33,7 @@ class System {
         }
         
         array_insert($GLOBALS['TL_CTE']['texts'],2,array (
-            'content_dummy' => 'Sioweb\ContentElement\ContentDummy',
+            'content_dummy' => 'Sioweb\DummyBundle\ContentElement\ContentDummy',
         ));
     }
 
