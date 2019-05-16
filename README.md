@@ -69,6 +69,12 @@ Zwischen Contao 4.4 und 4.6 bzw. 4.9 gibt es starke Veränderungen in der Art un
 
 Sieh dir hierzu auch mein [Glossar-Modul](https://github.com/Sioweb/glossar_c4) an, welches für Contao <= 4.6 eine Art "Fake-Polyfill" verwendet, um die Events aus der `config.php` zu laden.
 
+## Interfaces
+
+Warum müssen diese seltsamen Interfaces implementiert werden und warum weiß Contao dann, dass entsprechende Methoden aufgerufen werden sollen?
+
+Ganz einfach, Contao wie auch Symfony prüfen an einigen Stellen, ob eine Klasse - z.B. die in Plugin.php - dem Typ `RoutingPluginInterface` entspricht mit `if(Plugin instanceof RoutingPluginInterface) {}` und führt dann entsprechende Operationen aus.
+
 ## Eigene Routen
 
 ### Plugin.php
