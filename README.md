@@ -11,6 +11,7 @@ Es gibt zwei Kategorien an Fragen:
 - [Das Modul hier funktioniert nicht oder dir ist nicht klar was das soll](https://github.com/Sioweb/Contao4DummyBundle/issues)
 - [Du hast Fragen zur Entwicklung mit Contao](https://community.contao.org/de/)
 - [Alternativ gibt es auch von Contao selbst, das Skelton Bundle](https://github.com/contao/skeleton-bundle)
+- [Keine Frage, aber du findest das Modul voll gut](https://github.com/Sioweb/Contao4DummyBundle#dir-gef%C3%A4llt-das-bundle)
 
 Sollte dir etwas in diesem Bundle fehlen, werde ich schauen ob ich es hinzufügen kann, oder du erstellst ein Pull-Request und erleichterst mir die Arbeit ab.
 
@@ -134,10 +135,10 @@ Satis benötigt eine Domain etwa packages.deine-domain.de, welche nach der insta
 #### Mein Workflow
 
 1. Modul auf via Git auf Gitlab pushen.
-- In Gitlab einen Tag mit Version und changes anlegen.
-- Gitlab Interactions empfangen das Tag-Event und rufen eine PHP-Datei in Satis auf (.php?package=sioweb/packagename)
-	- Gitlab sendet dazu einen Security-Token den die PHP-Datei validiert
-- Satis lädt das neue Paket
+2. In Gitlab einen Tag mit Version und changes anlegen.
+3. Gitlab Interactions empfangen das Tag-Event und rufen eine PHP-Datei in Satis auf (.php?package=sioweb/packagename)
+	1. Gitlab sendet dazu einen Security-Token den die PHP-Datei validiert
+4. Satis lädt das neue Paket
 
 Danach kann das Modul überall mit `composer req sioweb/packagename` installiert werden, wenn das Satis-Repository im `repositories`-Block hinterlegt ist.
 
