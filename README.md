@@ -10,6 +10,7 @@ Es gibt zwei Kategorien an Fragen:
 
 - [Das Modul hier funktioniert nicht oder dir ist nicht klar was das soll](https://github.com/Sioweb/Contao4DummyBundle/issues)
 - [Du hast Fragen zur Entwicklung mit Contao](https://community.contao.org/de/)
+- [Alternativ gibt es auch von Contao selbst, das Skelton Bundle](https://github.com/contao/skeleton-bundle)
 
 Sollte dir etwas in diesem Bundle fehlen, werde ich schauen ob ich es hinzufügen kann, oder du erstellst ein Pull-Request und erleichterst mir die Arbeit ab.
 
