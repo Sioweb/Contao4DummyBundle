@@ -203,7 +203,7 @@ Damit Doctrine mit Entities funktionieren, muss in der `ROOT/app/config/config.y
 	                mappings:
 	                    ErstesBundleMitEntities: ~
 	                    ZweitesBundleMitEntities: ~
-						SiowebDummyBundle: ~
+	                    SiowebDummyBundle: ~
 
 ### PSR-4
 
