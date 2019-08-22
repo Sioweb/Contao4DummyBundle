@@ -165,9 +165,11 @@ Kommentare die ich aus `Tutorialgründen` notiert habe, sollten auf jeden Fall e
 
 ### Vorab
 
-Du kannst diese Einstellungen auch direkt in deinem Modul einrichten, du musst dazu nicht die composer.json oder die config.yml von Contao anfassen. In diesem DummyBundle ist ein Beispiel zu finden, wie du Doctrine, Entities und Repositories verwendest.
+Du kannst diese Einstellungen auch direkt in deinem Modul einrichten, du musst dazu nicht die composer.json oder die config.yml von Contao anfassen. In diesem DummyBundle ist ein Beispiel zu finden, wie du Doctrine, Entities und Repositories verwendest. Wichtig ist, die Entities, müssen unter `/src/Entity/` hinterlegt werden. Zusätzlich muss Doctrine im [Plugin](https://github.com/Sioweb/Contao4DummyBundle/blob/master/bundles/Sioweb/DummyBundle/src/ContaoManager/Plugin.php) mitgeteilt werden, das die Entities geladen werden müssen.
 
 ### Nützliche Erweiterungen für Doctrine
+
+**Hinweis:** Ab 4.8 wird ORM etc. schon eingebunden. Für Module ab 4.4 bis 4.8 müssen diese Pakete noch mit angegeben werden.
 
 Diese Symfony-Bundles nutze ich gerne in meinen Apps, da sie mehr Datentypen als nur die Standards beherrschen wie `Enum`.
 
