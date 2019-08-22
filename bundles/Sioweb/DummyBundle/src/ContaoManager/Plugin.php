@@ -7,6 +7,7 @@ use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
 use Contao\ManagerPlugin\Routing\RoutingPluginInterface;
 use Symfony\Component\Config\Loader\LoaderResolverInterface;
+use Symfony\Component\HttpKernel\Kernel;
 use Symfony\Component\HttpKernel\KernelInterface;
 
 // Für die Konfiguration
@@ -59,20 +60,13 @@ class Plugin implements BundlePluginInterface, RoutingPluginInterface
     {
         /**
          * Füge dein Bundle zu Doctrine hinzu
+         * Ab Contao 4.8 ist das nicht mehr notwendig
+         * (Kernel::VERSION < '4.3' ist ab Contao 4.8 TRUE)
          */
-        if ('doctrine' === $extensionName) {
-            
-            $extensionConfigs[0] = array_merge($extensionConfigs[0], [
-                'orm' => [
-                    'entity_managers' => [
-                        'default' => [
-                            'mappings' => [
-                                'SiowebDummyBundle' => ''
-                            ]
-                        ]
-                    ]
-                ]
-            ]);
+        if ('doctrine' === $extensionName && Kernel::VERSION < '4.3') 
+        {    
+            // Mit Contao 4.8 ist das nicht mehr notwendig
+            $extensionConfigs[0]['orm']['entity_managers']['default']['mappings']['SiowebDummyBundle'] = "";
         }
 
         return $extensionConfigs;
