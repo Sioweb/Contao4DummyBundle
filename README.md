@@ -4,6 +4,10 @@ Ziel dieses Snippets soll es sein, ein privates Bundle einzubinden in den Contao
 
 Dieses Repository dient als ein Tagebuch in dem ich nach und nach Lösungen für die Probleme notiere, welche mir während des Programmierens aufgetreten sind. Zu Beginn des Projektes, habe ich kaum Erfahrungen mit Composer, Yarn, RequireJS und nur einfache Kenntnisse über Symfony. Allerdings gleiche ich das mit jahrelanger Erfahrung wieder aus.
 
+## Umfangreiche Doku
+
+🥳 An der Contao-Konferenz 2019 wurde die neue Doku veröffentlicht. https://docs.contao.org/dev/
+
 ## Support/Fragen/Hilfe
 
 Es gibt zwei Kategorien an Fragen:
